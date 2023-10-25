@@ -2,7 +2,9 @@
 
 #include "../filter.h"
 
-class Sharpening : public Filter {
-public:
-    Image Apply(const Image &image) const override;
-};
+namespace sharpening {
+    class Sharpening : public Filter {
+    public:
+        Image Apply(const Image &image) const override;
+    };
+}
